@@ -27,6 +27,11 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+3. Create .env and add ANTHROPIC_API_KEY:
+```bash
+ANTHROPIC_API_KEY=sk-ant-***
+```
+
 ## Usage
 
 1. Run the Streamlit demo:
