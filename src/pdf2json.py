@@ -3,9 +3,10 @@ import os
 import re
 
 import anthropic
+from dotenv import load_dotenv
 import pdfplumber
 
-
+load_dotenv()
 class PDFExtractor:
     def __init__(self):
         self.abbreviations = None
@@ -115,3 +116,4 @@ if __name__ == "__main__":
     extractor = PDFExtractor()
     data = extractor.parse_pdf(pdf_path)
     extractor.export_json("pipes.json", "component_quantities.json")
+    exit()
